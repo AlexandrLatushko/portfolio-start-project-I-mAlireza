@@ -7,16 +7,17 @@ export const Header = () => {
     return (
         <StyledHeader>
             <Logo/>
-            <MenuHeader>
-                <li>
-                    <a href='#'>Home</a>
-                    <a href='#'>Projects</a>
-                    <a href='#'>About</a>
-                    <a href='#'>Content</a>
-                </li>
-            </MenuHeader>
+            <nav>
+                <MenuHeader>
+                    <li>
+                        <a href='#'>Home</a>
+                        <a href='#'>Projects</a>
+                        <a href='#'>About</a>
+                        <a href='#'>Content</a>
+                    </li>
+                </MenuHeader>
+            </nav>
             <MoonSvg/>
-
         </StyledHeader>
     );
 };
@@ -27,8 +28,13 @@ const StyledHeader = styled.header`
     justify-content: space-between;
     align-items: center;
 
+    nav {
+        margin-left: auto;
+
+    }
+
 `
 
 const MenuHeader = styled.ul`
-    margin-left: auto;
+
 `
